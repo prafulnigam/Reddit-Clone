@@ -1,0 +1,51 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+}
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 500px;
+    width: 800px;
+    border-radius: 30px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 42%;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column;
+    height: 100%;
+    width: 55%;
+
+}
+
+.logo-form > img{
+    height: 60%;
+    width: 75%;
+    margin: 30px;
+}
+.left > video{
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    width: 100%;
+}
