@@ -11,8 +11,7 @@ html,body{
     align-items: center;
     justify-content: center;
 }
-
-.form{
+.black-box{
     display: flex;
     flex-direction: row;
     background-color: black;
@@ -20,14 +19,16 @@ html,body{
     width: 800px;
     border-radius: 30px;
 }
-
 .left{
     display: flex;
     align-items: center;
     height: 100%;
     width: 42%;
 }
-
+.left > video{
+    height: 85%;
+    width: 100%;
+}
 .right{
     display: flex;
     align-items: center;
@@ -37,15 +38,22 @@ html,body{
     width: 55%;
 
 }
-
-.logo-form > img{
-    height: 60%;
+.logo > img{
+    height: 65%;
     width: 85%;
-    margin: 30px;
+    margin: 10px 30px 0px 30px;
 }
-.left > video{
-    margin: 0;
-    padding: 0;
-    height: 90%;
-    width: 100%;
+input[type=text], input[type = password]{
+    width: 315px;
+    height: 25px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+}
+button{
+    background-color:rgb(255, 145, 0);
+    height: 30px;
+    width: 400px;
+    margin-top: 25px;
+    border-radius: 8px;
+    font-size: 15px;
 }
