@@ -9,10 +9,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    
-    
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        html,body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            color: white;
+            background: rgb(0,0,0);
+            background: linear-gradient(0deg, rgba(0,0,0,1) 38%, rgba(255,69,0,1) 88%);
+        }
+        .container {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .black-box {
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            height: 500px;
+            width: 800px;
+            border-radius: 30px;
+        }
+        .left {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 42%;
+        }
+        .left > video {
+            height: 85%;
+            width: 100%;
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-flow: column;
+            height: 100%;
+            width: 55%;
+        }
+        .logo > img {
+            height: 65%;
+            width: 85%;
+            margin: 10px 30px 0px 30px;
+        }
+        .input-container {
+            position: relative;
+            width: 315px;
+            margin: 10px 0px;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            height: 25px;
+            padding-left: 30px; /* To accommodate the icon */
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+            height: 40px;
+            width: 100%;
+            margin-top: 15%;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            border-radius: 10px;
+            font-weight: 1000;
+        }
+        button:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
 </head>
-<body >
+<body>
     <div class="container">
         <div class="black-box">
             <div class="left">
@@ -22,13 +100,13 @@
                 <div class="logo">
                     <img src="assets/reddit-logo.jpg">
                 </div>
-                <form class="details" action="">
-                    <div class="one">
-                        USERNAME : <input type="text" >
+                <form class="details" action="" onsubmit="return validateForm()">
+                    <div class="one input-container">
+                        <input type="text" id="username" placeholder="Username">
                     </div>
                     <br>
-                    <div class="two">
-                        PASSWORD: <input type="password">
+                    <div class="two input-container">
+                        <input type="password" id="password" placeholder="Password">
                     </div>
                     <div class="three">
                         <button type="submit">Login</button>
@@ -37,5 +115,19 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "" || password === "") {
+                alert("Both Fields Must be Filled Out");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </body>
 </html>
