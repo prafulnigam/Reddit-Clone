@@ -84,7 +84,11 @@
             border-radius: 10px;
             font-weight: 1000;
         }
-        button:hover {
+        a{
+            text-decoration: none;
+
+        }
+        button:hover,  a:hover {
             color: #fff;
             text-decoration: none;
         }
@@ -102,14 +106,14 @@
                 </div>
                 <form class="details" action="" onsubmit="return validateForm()">
                     <div class="one input-container">
-                        <input type="text" id="username" placeholder="Username">
+                        <input type="text" id="username" placeholder="Username" required>
                     </div>
                     <br>
                     <div class="two input-container">
-                        <input type="password" id="password" placeholder="Password">
+                        <input type="password" id="password" placeholder="Password" required>
                     </div>
                     <div class="three">
-                        <button type="submit">Login</button>
+                        <button> <a href="home.html">Login</a> </button>
                     </div>
                 </form>
             </div>
