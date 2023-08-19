@@ -57,7 +57,6 @@ color: white;
 color: grey;
 height: 800px;
 width:300px;
-position: absolute;
 border-right: solid black 1px;
 margin-top: -22px;
 position: sticky;
@@ -68,16 +67,15 @@ z-index: 1;
 
 .categoriesname{
 padding-top: 10px;
-position: absolute;
+position: fixed;
 margin-left: 140px;
 margin-top: 80px;
 }
 
 .home{
 font-size: 20px;
-position: absolute;
 margin-left: 0px;
-position: absolute;
+position: fixed;
 margin-top: 40px;
 border-bottom: solid black 1px;
 width:300px;
@@ -85,7 +83,7 @@ padding-bottom: 15px;
 text-align: center;
 }
 .om{
-position: absolute;
+position: fixed;
 margin-top: 380px;
 margin-left: 0px;
 font-size: 18px;
