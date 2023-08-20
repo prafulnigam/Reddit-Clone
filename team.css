@@ -8,7 +8,8 @@
 
 body{
     /* background-color: rgba(128, 128, 128, 0.236); */
-    background-color: #ff440063;
+    background:linear-gradient(45deg,#ffaf00,#9939bce8);
+    
     
 }
 .row{
