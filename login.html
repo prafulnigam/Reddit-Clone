@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         * {
             font-family: 'Poppins', sans-serif;
@@ -104,16 +105,18 @@
                 <div class="logo">
                     <img src="assets/reddit-logo.jpg">
                 </div>
-                <form class="details" action="" onsubmit="return validateForm()">
+                <form class="details" action="home.html" onsubmit="return validateForm()">
                     <div class="one input-container">
-                        <input type="text" id="username" placeholder="Username" required>
+                        <input type="text" id="username" placeholder=" Username"  required>
+                        <i class="fa-solid fa-user" style="color: #000000; position: absolute; margin-top: -22px; margin-left: 10px;"></i>
                     </div>
                     <br>
                     <div class="two input-container">
                         <input type="password" id="password" placeholder="Password" required>
+                        <i class="fa-solid fa-lock" style="color: #000000; position: absolute; margin-top: -22px; margin-left: 10px;"></i>
                     </div>
                     <div class="three">
-                        <button> <a href="home.html">Login</a> </button>
+                        <button id="loginButton" onclick="submitForm()">Login</button>
                     </div>
                 </form>
             </div>
@@ -132,6 +135,12 @@
 
             return true;
         }
+
+        function submitForm() {
+        if (validateForm()) {
+            window.location.replace("home.html");
+        }
+    }
     </script>
 </body>
 </html>
