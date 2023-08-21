@@ -40,16 +40,16 @@ padding: 10px 10px 10px 60px;
 width: 90px ;
 height:40px;
 border-radius: 50px;
-margin-left:170px;
+margin-left:120px;
 border:none
 }
-.login{
-width: 70px ;
+.github{
+width: 100px ;
 height:40px;
 margin-left:10px;
 border:none;
 border-radius: 50px;
-background-color: rgb(233, 80, 20);
+background-color:#133766;
 color: white;
 }
 
@@ -191,7 +191,7 @@ body {
     bottom: 20px;
     right: 20px;
     font-size: 24px;
-    background-color: #007bff;
+    background-color: #ff4500;
     color: #fff;
     border: none;
     border-radius: 50%;

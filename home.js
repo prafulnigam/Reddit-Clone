@@ -89,16 +89,3 @@ function reorderPosts() {
 function toggleVote(button) {
     button.classList.toggle('active');
 }
-
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const username = urlParams.get('username');
-
-        // Display the username in the designated element
-        const usernameDisplay = document.getElementById('usernameDisplay');
-        if (username) {
-            usernameDisplay.textContent = `Hello, ${username}!`;
-        }
-        else{
-            usernameDisplay.textContent = `Hello !`;
-        }
