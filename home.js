@@ -40,11 +40,16 @@ function createPostPopup() {
                     <span class="upvote">▲</span>
                     <span class="vote-count">0</span>
                     <span class="downvote">▼</span>
+                    <button class="edit-button">Edit</button>
                     <button class="delete-button">Delete</button>
                 </div>
             </div>
         `;
 
+    const editButton = postElement.querySelector(".edit-button");
+    editButton.addEventListener("click", () => {
+      editPost(postElement); // Pass the post element to the editPost function
+    });
     const deleteButton = postElement.querySelector(".delete-button");
     deleteButton.addEventListener("click", () => {
       deletePost(postElement);
@@ -106,4 +111,40 @@ function reorderPosts() {
 
 function toggleVote(button) {
   button.classList.toggle("active");
+}
+
+function saveEditedPost(postElement) {
+  const title = postTitleInputPopup.value;
+  const content = postContentInputPopup.value;
+
+  if (title && content) {
+    const postTitle = postElement.querySelector(".post-title");
+    const postContent = postElement.querySelector(".post-content");
+
+    postTitle.textContent = title;
+    postContent.textContent = content;
+
+    // Switch button back to creating new post
+    submitButtonPopup.textContent = "Submit";
+    submitButtonPopup.removeEventListener("click", saveEditedPost);
+    submitButtonPopup.addEventListener("click", createPostPopup);
+
+    overlay.style.display = "none";
+  }
+}
+
+function editPost(postElement) {
+  overlay.style.display = "flex";
+
+  const postTitle = postElement.querySelector(".post-title").textContent;
+  const postContent = postElement.querySelector(".post-content").textContent;
+
+  postTitleInputPopup.value = postTitle;
+  postContentInputPopup.value = postContent;
+
+  submitButtonPopup.textContent = "Save Changes";
+  submitButtonPopup.removeEventListener("click", createPostPopup);
+  submitButtonPopup.addEventListener("click", () => {
+    saveEditedPost(postElement);
+  });
 }
