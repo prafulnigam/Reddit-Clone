@@ -292,3 +292,54 @@ body {
   margin-top: 380px;
   margin-left: -180px;
 }
+.popularc h2{
+  text-align: center;
+  line-height: 0.25rem;
+  font-weight: lighter;
+  font-size: 1.25rem;
+  justify-content: center;
+  font-family: "Poppins",sans-serif;
+  padding-left: 15px;
+  
+}
+
+.popularc{
+  margin-inline-start: 1200px;
+  margin-top: -2350px;
+  border: 2px solid black;
+  position: sticky;
+  
+  border-radius: 15px;
+  padding-right: 50px;
+  background-color:white;
+  scroll-behavior: smooth;
+  justify-content: space-between;
+
+  
+} 
+/* popular communities css */
+
+
+.ptext{
+  font-weight: bold;
+  font-style: inherit;
+  font-size: smaller;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+}
+.ptext-12{
+  font-size: 0.75rem;
+  margin-left: 40px;
+  text-align: center;
+  ;
+}
+
+.popularc li{
+  list-style-type: none;
+}
+.popularc li img{
+  height: 25px;
+  margin-right: 20px;
+  margin-bottom: -4px;
+}
