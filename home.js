@@ -26,6 +26,7 @@ function createPostPopup() {
         const postElement = document.createElement('div');
         postElement.className = 'post';
         postElement.innerHTML = `
+            <div class = "newpost">
             <h3 class="post-title">${title}</h3>
             <p class="post-content">${content}</p>
             ${imageFile ? `<img src="${URL.createObjectURL(imageFile)}" alt="Post Image" style="max-width: 100%;">` : ''}
@@ -33,6 +34,7 @@ function createPostPopup() {
                 <span class="upvote">▲</span>
                 <span class="vote-count">0</span>
                 <span class="downvote">▼</span>
+            </div>
             </div>
         `;
 
