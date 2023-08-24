@@ -367,10 +367,38 @@ body {
     display: none;
   }
   .add-post-button{
-    margin-left: -10%;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
   }
   .posts{
     padding: 0;
     margin-right: -20%;
+  }
+  .create-post-title{
+    text-align: center;
+  }
+  .overlay{
+    width: 50%;
+    margin-left: 30%;
+  }
+  .popup-image{
+    width: 100%;
+    height: auto;
+  }
+  .create-post-title{
+    text-align: center;
+  }
+  #post-title-popup{
+    width: 100%;
+    padding-left: 10%;
+  }
+  #post-content-popup{
+    width: 100%;
+  }
+  #post-image-popup{
+    width: 100%;
   }
 }
