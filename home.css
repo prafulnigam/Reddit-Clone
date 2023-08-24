@@ -381,8 +381,8 @@ body {
     text-align: center;
   }
   .overlay{
-    width: 50%;
-    margin-left: 30%;
+    width: 80%;
+    margin-left: 10%;
   }
   .popup-image{
     width: 100%;
@@ -392,13 +392,14 @@ body {
     text-align: center;
   }
   #post-title-popup{
-    width: 100%;
+    width: 50%;
     padding-left: 10%;
   }
   #post-content-popup{
-    width: 100%;
+    width: 50%;
   }
   #post-image-popup{
     width: 100%;
   }
+   
 }
