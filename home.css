@@ -55,7 +55,9 @@ body {
   border: none;
   background-color: #424242;
 }
-
+.mobile-container{
+  display: none;
+}
 .github {
   width: 100px;
   height: 40px;
@@ -360,6 +362,12 @@ body {
   border-radius: 7px;
 
 }
+#hamm{
+  display: none;
+}
+#hamm i{
+  position: fixed;
+}
 
 #post-image-popup {
   position: absolute;
@@ -409,15 +417,20 @@ body {
   border: none;
 }
 
+
 @media screen and (max-width:1000px) {
   .categoriesblock {
     display: none;
   }
-
+  .mobile-container{
+    display: unset;
+  }
   .container {
     margin-top: 2%;
   }
-
+  #hamm{
+    display: unset;
+  }
   .add-post-button {
     right: 0;
   }
@@ -474,4 +487,43 @@ body {
   #post-image-popup {
     width: 100%;
   }
+  .mobile-container {
+    max-width: 100%;
+    margin: auto;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a.icon {
+    float: right;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: red;
+    color: white;
+  }
+    
 }
