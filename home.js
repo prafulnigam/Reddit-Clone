@@ -27,7 +27,7 @@ function createPostPopup() {
     postElement.className = "post";
     postElement.innerHTML = `
             <div class="newpost">
-                <h3 class="post-title">${title}</h3>
+                <h3 class="post-title">${title}</h3><hr>
                 <p class="post-content">${content}</p>
                 ${
                   imageFile
@@ -37,11 +37,11 @@ function createPostPopup() {
                     : ""
                 }
                 <div class="votes">
-                    <span class="upvote">▲</span>
+                    <span class="upvote"><i class="fa-solid fa-up-long" style="color: #00040a;"></i></span>
                     <span class="vote-count">0</span>
-                    <span class="downvote">▼</span>
-                    <button class="edit-button">Edit</button>
-                    <button class="delete-button">Delete</button>
+                    <span class="downvote"><i class="fa-solid fa-down-long" style="color: #000205;"></i></span>
+                    <button class="edit-button"><i class="fa-solid fa-pen-to-square fa-xl" style="color: #070808;"></i></button>
+                    <button class="delete-button"><i class="fa-regular fa-trash-can fa-xl" style="color: #000000;"></i></button>
                 </div>
             </div>
         `;

@@ -159,8 +159,9 @@ body {
 
 
 
+
 .post {
-  border: 1px solid #ccc;
+  border: 8px outset #03030438;
   /* padding: 10px; */
   margin-bottom: 10px;
   border-radius: 5px;
@@ -168,10 +169,17 @@ body {
 .post-title {
   font-size: 20px;
   margin: 0;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  
+
 }
+
 
 .post-content {
   margin-top: 5px;
+  padding: 10px;
 }
 
 .votes {
@@ -184,6 +192,8 @@ body {
 .downvote {
   cursor: pointer;
   margin-right: 5px;
+  padding: 5px;
+  margin-left: 5px;
 }
 
 .upvote.active,
@@ -218,9 +228,39 @@ body {
   height: 530px;
   margin-left: 500px;
   margin-top: 150px;
-  background-color:#cbcbcb;
+  background-color:#cbcbcbd7;
   justify-content: center;
   z-index: 1;
+  border-radius: 20px;
+}
+.overlay input{
+  background: transparent;
+  border-radius: 10px;
+
+}
+.overlay textarea{
+  background: transparent;
+  border-radius: 10px;
+  
+
+}
+.overlay textarea:hover{
+  background-color: white;
+}
+.overlay input:hover{
+  background-color: white;
+  
+
+}
+
+::file-selector-button{
+  height: 60px;
+  border-radius: 10px;
+  
+}
+
+::file-selector-button:hover{
+  background-color:#cbcbcbd7 ;
 }
 /* #ef4e18 */
 /* #adadac */
@@ -280,6 +320,7 @@ body {
   height: 30px;
   width: 195px;
   padding-left: 120px;
+  
 }
 
 #post-content-popup{
@@ -296,6 +337,9 @@ body {
   position: absolute;
   margin-top: 380px;
   margin-left: -180px;
+}
+#post-image-popup button{
+  border-radius:50px;
 }
 .popularc h2{
   text-align: center;
@@ -322,10 +366,22 @@ body {
 
   
 } 
+.delete-button{
+  background: transparent;
+  border: none;
+  height: 10%;
+  
+}
+.edit-button{
+  background: transparent;
+  border: none;
+}
+
+
 /* popular communities css */
 
 
-.ptext{
+/* .ptext{
   font-weight: bold;
   font-style: inherit;
   font-size: smaller;
@@ -338,7 +394,7 @@ body {
   margin-left: 40px;
   text-align: center;
   ;
-}
+} */
 
 /* .popularc li{
   list-style-type: none;
