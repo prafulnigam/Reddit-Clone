@@ -29,12 +29,13 @@ function createPostPopup() {
             <div class="newpost">
                 <h3 class="post-title">${title}</h3><hr>
                 <p class="post-content">${content}</p>
-                ${imageFile
-        ? `<img src="${URL.createObjectURL(
-          imageFile
-        )}" alt="Post Image" style="max-width: 100%;">`
-        : ""
-      }
+                ${
+                  imageFile
+                    ? `<img src="${URL.createObjectURL(
+                        imageFile
+                      )}" alt="Post Image" style="max-width: 100%;">`
+                    : ""
+                }
                 <div class="votes">
                     <span class="upvote"><i class="fa-solid fa-up-long" style="color: white;"></i></span>
                     <span class="vote-count">0</span>
@@ -156,5 +157,3 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-
-

@@ -1,5 +1,5 @@
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
 
@@ -27,7 +27,6 @@ body {
 
 .titlereddit {
   margin-left: 10px;
-
 }
 
 .container1 {
@@ -55,7 +54,7 @@ body {
   border: none;
   background-color: #424242;
 }
-.mobile-container{
+.mobile-container {
   display: none;
 }
 .github {
@@ -79,7 +78,6 @@ body {
   /* Adjust this value to match the height of the header */
   z-index: 1;
   background-color: #212121;
-
 }
 
 .categoriesname {
@@ -88,8 +86,6 @@ body {
   margin-left: 140px;
   margin-top: 80px;
   font-size: 18px;
-
-
 }
 
 .home {
@@ -102,7 +98,6 @@ body {
   padding-bottom: 15px;
   text-align: center;
   margin-left: -10px;
-
 }
 
 .om {
@@ -127,8 +122,6 @@ body {
   overflow-x: scroll;
   width: 77%;
   overflow-y: hidden;
-
-
 }
 
 .trendingtopics img {
@@ -149,9 +142,7 @@ body {
   align-items: center;
   margin: 0 20px;
   transition: transform 0.3s ease-in-out;
-
 }
-
 
 /* Add the styles from the second code here */
 body {
@@ -173,9 +164,6 @@ body {
   margin-top: 20px;
 }
 
-
-
-
 .post {
   border: 8px outset #ffffff38;
   /* padding: 10px; */
@@ -191,10 +179,7 @@ body {
   color: rgb(255, 255, 255);
   padding: 10px;
   background-color: #424242;
-
-
 }
-
 
 .post-content {
   margin-top: 5px;
@@ -239,7 +224,6 @@ body {
   align-items: center;
 }
 
-
 .overlay {
   display: none;
   position: absolute;
@@ -259,15 +243,12 @@ body {
   background: transparent;
   border-radius: 10px;
   color: #212121;
-
 }
 
 .overlay textarea {
   background: transparent;
   border-radius: 10px;
   color: #212121;
-
-
 }
 
 .overlay textarea:hover {
@@ -276,14 +257,11 @@ body {
 
 .overlay input:hover {
   background-color: white;
-
-
 }
 
 ::file-selector-button {
   height: 60px;
   border-radius: 10px;
-
 }
 
 ::file-selector-button:hover {
@@ -293,10 +271,8 @@ body {
 /* #ef4e18 */
 /* #adadac */
 .popup {
-
   padding: 20px;
   border-radius: 5px;
-
 }
 
 .close-button {
@@ -306,7 +282,7 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 1.0em;
+  font-size: 1em;
   background-color: white;
   width: 30px;
   border-radius: 50%;
@@ -318,7 +294,6 @@ body {
   margin-top: -305px;
   margin-left: 155px;
   color: #212121;
-
 }
 
 .popup-image {
@@ -330,7 +305,6 @@ body {
   border-radius: 30px;
 }
 
-
 #submit-post-popup {
   position: absolute;
   margin-top: 460px;
@@ -340,7 +314,6 @@ body {
   border-radius: 50px;
   border: none;
   background-color: #424242;
-
 }
 
 #post-title-popup {
@@ -350,7 +323,6 @@ body {
   height: 30px;
   width: 195px;
   padding-left: 120px;
-
 }
 
 #post-content-popup {
@@ -360,19 +332,18 @@ body {
   height: 60px;
   width: 250px;
   border-radius: 7px;
-
 }
-#hamm{
+#hamm {
   display: none;
 }
-#hamm i{
+#hamm i {
   position: fixed;
 }
 
 #post-image-popup {
   position: absolute;
   margin-top: 380px;
-  margin-left: -180px;;
+  margin-left: -180px;
 }
 
 #post-image-popup button {
@@ -387,7 +358,6 @@ body {
   justify-content: center;
   font-family: "Poppins", sans-serif;
   padding-left: 15px;
-
 }
 
 .popularc {
@@ -401,15 +371,12 @@ body {
   background-color: white;
   scroll-behavior: smooth;
   justify-content: space-between;
-
-
 }
 
 .delete-button {
   background: transparent;
   border: none;
   height: 10%;
-
 }
 
 .edit-button {
@@ -417,18 +384,17 @@ body {
   border: none;
 }
 
-
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
   .categoriesblock {
     display: none;
   }
-  .mobile-container{
+  .mobile-container {
     display: unset;
   }
   .container {
     margin-top: 2%;
   }
-  #hamm{
+  #hamm {
     display: unset;
   }
   .add-post-button {
@@ -494,17 +460,17 @@ body {
     color: white;
     border-radius: 10px;
   }
-  
+
   .topnav {
     overflow: hidden;
     background-color: #333;
     position: relative;
   }
-  
+
   .topnav #myLinks {
     display: none;
   }
-  
+
   .topnav a {
     float: left;
     color: white;
@@ -512,7 +478,7 @@ body {
     text-decoration: none;
     font-size: 17px;
   }
-  
+
   .topnav a.icon {
     float: right;
   }
@@ -520,10 +486,9 @@ body {
     background-color: #ddd;
     color: black;
   }
-  
+
   .active {
     background-color: red;
     color: white;
   }
-    
 }
