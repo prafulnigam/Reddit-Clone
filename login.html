@@ -33,8 +33,8 @@
             display: flex;
             flex-direction: row;
             background-color: black;
-            height: 500px;
-            width: 800px;
+            height: 60%;
+            width: 55%;
             border-radius: 30px;
         }
         .left {
@@ -57,20 +57,22 @@
         }
         .logo > img {
             height: 65%;
-            width: 85%;
-            margin: 10px 30px 0px 30px;
+            width: 35%;
+            /* margin: 30px 30px 10px 30px; */
+            margin-left: 30%;
+            margin-top: 5%;
         }
         .input-container {
             position: relative;
-            width: 315px;
-            margin: 10px 0px;
+            width: 25%px;
+            margin: 5% 0%;
             border-radius: 5px;
             border: none;
         }
         input[type=text], input[type=password] {
             width: 100%;
-            height: 25px;
-            padding-left: 30px; /* To accommodate the icon */
+            height: 10%;
+            padding-left: 5%; /* To accommodate the icon */
             border-radius: 5px;
             border: none;
         }
@@ -93,6 +95,29 @@
             color: #fff;
             text-decoration: none;
         }
+        @media screen and (max-width:900px) {
+            .black-box{
+                height: 50%;
+                width: 90%;
+                margin-top: -40%;
+                text-align: center;
+            }
+            .left{
+                display: none;
+            }
+            .details{
+                height: 50%;
+                width: 90%;
+                text-align: center;
+            }
+            .input-container{
+                text-align: left;
+            }
+            .right{
+                text-align: center;
+            }
+
+        }
     </style>
 </head>
 <body>
@@ -106,14 +131,14 @@
                     <img src="assets/reddit-logo.jpg">
                 </div>
                 <form class="details" action="home.html" onsubmit="return validateForm()">
-                    <div class="one input-container">
-                        <input type="text" id="username" placeholder=" Username"  required>
-                        <i class="fa-solid fa-user" style="color: #000000; position: absolute; margin-top: -22px; margin-left: 10px;"></i>
+                    <div class="input-container">
+                        <input type="text" id="username" placeholder=" Username"  required style="padding-left: 10%;">
+                        <span class="photo"><i class="fa-solid fa-user" style="color: #000000; position: absolute; margin-top: -8%; margin-left: 2%;"></i></span>
                     </div>
                     <br>
-                    <div class="two input-container">
-                        <input type="password" id="password" placeholder="Password" required>
-                        <i class="fa-solid fa-lock" style="color: #000000; position: absolute; margin-top: -22px; margin-left: 10px;"></i>
+                    <div class="input-container">
+                        <input type="password" id="password" placeholder="Password" required style="padding-left: 10%;">
+                        <span class="photo"><i class="fa-solid fa-lock" style="color: #000000; position: absolute; margin-top: -8%; margin-left: 2%;"></i></span>
                     </div>
                     <div class="three">
                         <button id="loginButton" onclick="submitForm()">Login</button>
