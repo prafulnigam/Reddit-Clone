@@ -142,7 +142,7 @@ function editPost(postElement) {
   postTitleInputPopup.value = postTitle;
   postContentInputPopup.value = postContent;
 
-  submitButtonPopup.textContent = "Save Changes";
+  submitButtonPopup.textContent = "Save";
   submitButtonPopup.removeEventListener("click", createPostPopup);
   submitButtonPopup.addEventListener("click", () => {
     saveEditedPost(postElement);
