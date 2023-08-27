@@ -159,6 +159,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+.containerspecial {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: -800px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
 .posts {
   margin-top: 20px;
@@ -394,6 +402,9 @@ body {
   .container {
     margin-top: 2%;
   }
+   .containerspecial{
+    margin-top: 1%;
+  }  
   #hamm {
     display: unset;
   }
