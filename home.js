@@ -40,8 +40,8 @@ function createPostPopup() {
                     <span class="upvote"><i class="fa-solid fa-up-long" style="color: white;"></i></span>
                     <span class="vote-count">0</span>
                     <span class="downvote"><i class="fa-solid fa-down-long" style="color: white;"></i></span>
-                    <button class="edit-button"><i class="fa-solid fa-pen-to-square fa-xl" style="color: white;"></i></button>
-                    <button class="delete-button"><i class="fa-regular fa-trash-can fa-xl" style="color: white;"></i></button>
+                    <button class="edit-button" title="Edit"><i class="fa-solid fa-pen-to-square fa-xl" style="color: white;"></i></button>
+                    <button class="delete-button" title="Delete"><i class="fa-regular fa-trash-can fa-xl" style="color: white;"></i></button>
                 </div>
             </div>
         `;

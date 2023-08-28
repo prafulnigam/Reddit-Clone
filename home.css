@@ -254,9 +254,11 @@ body {
 
 .overlay {
   display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: 2%;
+  left: 4%;
+  right: 10%;
+  bottom: 10%;
   width: 600px;
   height: 530px;
   margin-left: 500px;
@@ -413,6 +415,7 @@ body {
   border: none;
 }
 
+
 @media screen and (max-width: 1000px) {
   .categoriesblock {
     display: none;
@@ -462,6 +465,7 @@ body {
   .overlay {
     width: 80%;
     margin-left: 10%;
+    
   }
 
   .popup-image {
