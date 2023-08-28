@@ -8,39 +8,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link href="About%20Us_files/css2.css" rel="stylesheet" />
-  </head>
 
-  <body style="background-color: #e3e5ea">
-    <div
-      style="
+    <style>
+      .firsts{
         background-color: #e3e5ea;
         margin-top: 50px;
         margin-bottom: 50px;
         padding-top: 50px;
         padding-bottom: 50px;
         height: 850px;
-      "
-    >
+      }
+      .second{
+        background-color: white;
+            height: 300px;
+            width: 350px;
+            text-align: center;
+            border-radius: 15%;
+      }
+      .circle{
+        margin-left: 5%; 
+        position: absolute;
+      }
+
+      @media screen and (max-width:600px){
+        .circle{
+          display: none;
+        }
+        .firsts{
+          display: none;
+        }
+        .youu{
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="background-color: #e3e5ea">
+    <div class="firsts">
       <img
         src="assets/blueface.webp"
-        style="margin-left: 80px; position: absolute"
+        class="circle"
       />
       <div
-        style="
-          background-color: #e3e5ea;
-          padding-top: 50px;
-          padding-bottom: 50px;
-          height: 350px;
-          display: inline;
-          margin-left: 300px;
-        "
-        class="first"
+        class="firsts"
       >
         <img
           src="assets/aboutuslogo.webp"
-          style="height: 100px; width: 100px; margin-left: 340px"
+          style="height: 10%; width: 5%; margin-left:43%"
         />
-        <h1 style="font-family: 'Poppins', sans-serif; margin-left: 550px">
+        <h1 style="font-family: 'Poppins', sans-serif; margin-left: 36%">
           <b>Dive Into Anything</b>
         </h1>
         <div
@@ -52,6 +69,7 @@
             font-family: 'Poppins', sans-serif;
             text-align: center;
           "
+          class="youu"
         >
           <p>
             Reddit is home to thousands of communities,endless conversation, and
@@ -75,18 +93,10 @@
           </p>
         </div>
       </div>
-      <img src="assets/cuteboy.webp" style="margin-left: 1080px" />
+      <img src="assets/cuteboy.webp" style="margin-left: 70%; position: relative; margin-top: -50%;" />
     </div>
 
-    <div
-      style="
-        background-color: #e3e5ea;
-        margin-top: -200px;
-        margin-bottom: 50px;
-        padding-top: -300px;
-        padding-bottom: 50px;
-        height: 550px;
-      "
+    <div class="firsts"
     >
       <h1 style="font-family: 'Poppins', sans-serif; text-align: center">
         <b> Reddit by the Numbers </b>
@@ -107,13 +117,7 @@
         style="text-align: center; display: flex; justify-content: space-around"
       >
         <div
-          style="
-            background-color: white;
-            height: 300px;
-            width: 350px;
-            text-align: center;
-            border-radius: 15%;
-          "
+          class="second"
         >
           <h1 style="font-family: 'Poppins', sans-serif">
             <br />
@@ -124,13 +128,7 @@
           </h1>
         </div>
         <div
-          style="
-            background-color: white;
-            height: 300px;
-            width: 350px;
-            text-align: center;
-            border-radius: 15%;
-          "
+          class="second"
         >
           <h1 style="font-family: 'Poppins', sans-serif">
             <br />
@@ -141,13 +139,7 @@
           </h1>
         </div>
         <div
-          style="
-            background-color: white;
-            height: 300px;
-            width: 350px;
-            text-align: center;
-            border-radius: 15%;
-          "
+          class="second"
         >
           <h1 style="font-family: 'Poppins', sans-serif">
             <br />
