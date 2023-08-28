@@ -261,7 +261,7 @@ body {
   height: 530px;
   margin-left: 500px;
   margin-top: 150px;
-  background-color: #cbcbcbd7;
+  background-color: #ffffff;
   justify-content: center;
   z-index: 1;
   border-radius: 20px;
@@ -372,6 +372,7 @@ body {
   position: absolute;
   margin-top: 380px;
   margin-left: -180px;
+  background: transparent;
 }
 
 #post-image-popup button {
