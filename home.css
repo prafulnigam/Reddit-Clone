@@ -414,7 +414,10 @@ body {
   background: transparent;
   border: none;
 }
-
+::placeholder{
+  font-weight: bold;
+  color: black;
+}
 
 @media screen and (max-width: 1000px) {
   .categoriesblock {
