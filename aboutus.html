@@ -1,160 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link href="About%20Us_files/css2.css" rel="stylesheet" />
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reddit - Dive Into Everything</title>
+<link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 
-    <style>
-      body{
-        background:linear-gradient(45deg,#ffaf00,#9939bc8e);
-        background-repeat: no-repeat;
-        font-size: 1.2em;
-      }
-      .firsts{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        height: 850px;
-      }
-      .second{
-        background-color: white;
-            height: 300px;
-            width: 350px;
-            text-align: center;
-            border-radius: 15%;
-      }
-      .circle{
-        margin-left: 5%; 
-        position: absolute;
-      }
-      
+html {
+  box-sizing: border-box;
+}
 
-      @media screen and (max-width:600px){
-        .circle{
-          display: none;
-        }
-        .firsts{
-          display: none;
-        }
-        .youu{
-          display: none;
-        }
-      }
-    </style>
-  </head>
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-  <body style="background-color: #e3e5ea">
-    <div class="firsts">
-      <img
-        src="assets/blueface.webp"
-        class="circle"
-      />
-      <div
-        class="firsts"
-      >
-        <img
-          src="assets/aboutuslogo.webp"
-          style="height: 10%; width: 5%; margin-left:43%"
-        />
-        <h1 style="font-family: 'Poppins', sans-serif; margin-left: 36%">
-          <b class="header-1">Dive Into Anything</b>
-        </h1>
-        <div
-          style="
-            height: 100px;
-            width: 400px;
-            margin-left: 510px;
-            margin-right: 350px;
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
-          "
-          class="youu"
-        >
-          <p>
-            Reddit is home to thousands of communities,endless conversation, and
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #ff4500;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Reddit</h1>
+  <p>Reddit is home to thousands of communities,endless conversation, and
             authentic human connection. Whether you're into breaking news,
             sports, TV fan theories, or a never-ending stream of the internet's
-            cutest animals. there's is community on Reddit for you.
-            <br /><br />
-            Hey there, fellow Redditors! We wanted to take a moment to introduce
+            cutest animals. there's is community on Reddit for you.</p>
+  <p>We wanted to take a moment to introduce
             ourselves and share a bit about who we are as a community. This
             subreddit is more than just a digital space – it's a vibrant hub
             where individuals from all walks of life come together to discuss,
-            learn, and connect over our shared passions.
-          </p>
-          <p>
-            If you're as excited as we are about meaningful conversations and
-            forging connections, we invite you to join our community! Click that
-            subscribe button, and don't forget to introduce yourself. We can't
-            wait to get to know you and learn from your unique experiences.
-            Thank you for being a part of this journey with us. Here's to many
-            more enlightening discussions and shared moments ahead! Stay curious
-          </p>
-        </div>
-      </div>
-      <img src="assets/cuteboy.webp" style="margin-left: 70%; position: relative; margin-top: -50%;" />
-    </div>
+            learn, and connect over our shared passions.</p>
+</div>
 
-    <div class="firsts"
-    >
-      <h1 style="font-family: 'Poppins', sans-serif; text-align: center">
-        <b> Reddit by the Numbers </b>
-      </h1>
-      <p style="text-align: center; font-family: 'Poppins', sans-serif">
-        <b>
-          Reddit is a growing family of millions of diverse people sharing the
-          things they care about most.
-        </b>
-      </p>
-      <p style="text-align: center; font-family: 'Poppins', sans-serif">
-        Last updated on Q4 2022
-        <br />
-      </p>
-      <br />
-      <br />
-      <div
-        style="text-align: center; display: flex; justify-content: space-around"
-      >
-        <div
-          class="second"
-        >
-          <h1 style="font-family: 'Poppins', sans-serif">
-            <br />
-            <b style="color: orangered; font-size: 60px"> 57M+ </b>
-            <br />
-            <br />
-            <p style="font-size: 25px">Daily Active Uniques</p>
-          </h1>
-        </div>
-        <div
-          class="second"
-        >
-          <h1 style="font-family: 'Poppins', sans-serif">
-            <br />
-            <b style="color: orangered; font-size: 60px"> 100K+ </b>
-            <br />
-            <br />
-            <p style="font-size: 25px">Active Communities</p>
-          </h1>
-        </div>
-        <div
-          class="second"
-        >
-          <h1 style="font-family: 'Poppins', sans-serif">
-            <br />
-            <b style="color: orangered; font-size: 60px"> 13B+ </b>
-            <br />
-            <br />
-            <p style="font-size: 25px">Posts & Comments</p>
-          </h1>
-        </div>
+<h2 style="text-align:center">Reddit By the Numbers</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>57M+</h2>
+        <p>Daily Active Uniques</p>
       </div>
     </div>
-  </body>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>100K+</h2>
+        <p>Active Communities</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>13B+</h2>
+        <p>Posts & Comments</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
