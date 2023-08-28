@@ -8,7 +8,7 @@
 
 body{
     /* background-color: rgba(128, 128, 128, 0.236); */
-    background-color: #424242;
+    background:linear-gradient(45deg,#ffaf00,#9939bc8e);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
