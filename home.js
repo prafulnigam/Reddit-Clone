@@ -16,7 +16,7 @@ closeButton.addEventListener("click", () => {
 });
 
 submitButtonPopup.addEventListener("click", createPostPopup);
-
+let currentEditedPost = null;
 function createPostPopup() {
   const title = postTitleInputPopup.value;
   const content = postContentInputPopup.value;
@@ -46,10 +46,11 @@ function createPostPopup() {
             </div>
         `;
 
-    const editButton = postElement.querySelector(".edit-button");
-    editButton.addEventListener("click", () => {
-      editPost(postElement); // Pass the post element to the editPost function
-    });
+        const editButton = postElement.querySelector(".edit-button");
+        editButton.addEventListener("click", () => {
+          currentEditedPost = postElement; // Set the current edited post
+          editPost(postElement);
+        });
     const deleteButton = postElement.querySelector(".delete-button");
     deleteButton.addEventListener("click", () => {
       deletePost(postElement);
@@ -113,23 +114,28 @@ function toggleVote(button) {
   button.classList.toggle("active");
 }
 
-function saveEditedPost(postElement) {
-  const title = postTitleInputPopup.value;
-  const content = postContentInputPopup.value;
+function saveEditedPost() {
+  if (currentEditedPost) {
+    const title = postTitleInputPopup.value;
+    const content = postContentInputPopup.value;
 
-  if (title && content) {
-    const postTitle = postElement.querySelector(".post-title");
-    const postContent = postElement.querySelector(".post-content");
+    if (title && content) {
+      const postTitle = currentEditedPost.querySelector(".post-title");
+      const postContent = currentEditedPost.querySelector(".post-content");
 
-    postTitle.textContent = title;
-    postContent.textContent = content;
+      postTitle.textContent = title;
+      postContent.textContent = content;
 
-    // Switch button back to creating new post
-    submitButtonPopup.textContent = "Submit";
-    submitButtonPopup.removeEventListener("click", saveEditedPost);
-    submitButtonPopup.addEventListener("click", createPostPopup);
+      // Switch button back to creating new post
+      submitButtonPopup.textContent = "Submit";
+      submitButtonPopup.removeEventListener("click", saveEditedPost);
+      submitButtonPopup.addEventListener("click", createPostPopup);
 
-    overlay.style.display = "none";
+      overlay.style.display = "none";
+
+      // Reset the currentEditedPost
+      currentEditedPost = null;
+    }
   }
 }
 
@@ -139,21 +145,31 @@ function editPost(postElement) {
   const postTitle = postElement.querySelector(".post-title").textContent;
   const postContent = postElement.querySelector(".post-content").textContent;
 
-  postTitleInputPopup.value = postTitle;
-  postContentInputPopup.value = postContent;
+  const editTitleInput = document.getElementById("post-title-popup");
+  const editContentInput = document.getElementById("post-content-popup");
+
+  editTitleInput.value = postTitle;
+  editContentInput.value = postContent;
 
   submitButtonPopup.textContent = "Save";
   submitButtonPopup.removeEventListener("click", createPostPopup);
-  submitButtonPopup.addEventListener("click", () => {
-    saveEditedPost(postElement);
-  });
+  submitButtonPopup.addEventListener("click", saveEditedPost);
 }
+
+addPostButton.addEventListener("click", () => {
+  // Clear the title and content input fields
+  postTitleInputPopup.value = "";
+  postContentInputPopup.value = "";
+
+  overlay.style.display = "flex";
+});
+
 
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
-    x.style.display = "block";
-  }
+    x.style.display = "block";
+}
 }
