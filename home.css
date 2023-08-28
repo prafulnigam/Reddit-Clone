@@ -146,7 +146,7 @@ body {
 
 /* Add the styles from the second code here */
 body {
-  font-family: Arial, sans-serif;
+ 
   margin: 0;
   padding: 0;
 }
@@ -208,6 +208,26 @@ body {
   margin-right: 5px;
   padding: 5px;
   margin-left: 5px;
+
+}
+.footer-team1{
+  position: fixed;
+  bottom:10%;
+  left: 3%;
+  text-align: center;
+  
+}
+.footer-team2{
+  position: fixed;
+  bottom: 2%;
+  left:3%;
+  
+}
+.upvote:hover{
+  background-color:#ff440080
+}
+.downvote:hover{
+  background-color: rgba(137, 43, 226, 0.272);
 }
 
 .upvote.active,
