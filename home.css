@@ -414,6 +414,12 @@ body {
   background: transparent;
   border: none;
 }
+.edit-button:hover{
+  background-color:#f7cac9
+}
+.delete-button:hover{
+  background-color:goldenrod;
+}
 ::placeholder{
   font-weight: bold;
   color: black;
