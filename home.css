@@ -75,7 +75,8 @@ body {
   margin-top: -22px;
   position: sticky;
   top: 10px;
-  /* Adjust this value to match the height of the header */
+
+
   z-index: 1;
   background-color: #212121;
 }
@@ -83,7 +84,7 @@ body {
 .categoriesname {
   padding-top: 10px;
   position: fixed;
-  margin-left: 140px;
+  margin-left: 145px;
   margin-top: 80px;
   font-size: 18px;
 }
@@ -94,7 +95,7 @@ body {
   position: fixed;
   margin-top: 40px;
   border-bottom: solid white 2px;
-  width: 300px;
+  width: 310px;
   padding-bottom: 15px;
   text-align: center;
   margin-left: -10px;
