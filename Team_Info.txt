@@ -6,6 +6,12 @@ Hey ! We'll be working on a clone similar to Reddit.
   - Priyanshu Dawar
   - Pulkit Gupta
 
+This Project is responsive & based on HTML, CSS & Js.
+Project Completed on -> 29.08.2023
 
 
-*Today's meeting at 10PM in 721
+
+
+
+
+FEEL FREE TO CONTRIBUTE : )
