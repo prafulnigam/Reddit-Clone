@@ -6,6 +6,4 @@ Hey ! We'll be working on a clone similar to Reddit.
   - Priyanshu Dawar
   - Pulkit Gupta
 
-
-
-*Today's meeting at 10PM in 721
+This Project is responsive & based on HTML, CSS & Js.
